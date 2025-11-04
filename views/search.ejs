@@ -2,8 +2,16 @@
 <html lang="en">
     <head>
         <title><%=shopName%></title>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <h1>This is the search page of <%=shopName%> Shop</h1>
+        <h1>This is the search page of <a href="/"><%=shopName%></a> Shop</h1>
+        <form action="/search_result" method="get">
+            <p>Name:</p>
+            <input id='search_box' type="text" name="search_text"><br>
+            <p>Category:</p>
+            <input id="search_box" type="text" name="category"><br>
+            <input type="submit" value="Search">
+        </form>
     </body>
 </html>

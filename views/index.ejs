@@ -2,14 +2,18 @@
 <html>
     <head>
         <title><%=shopName%></title>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <h1>Welcome to <%=shopName%> Shop</h1>
+        <h1>Welcome to <a href="/"><%=shopName%></a> Shop</h1>
         <h2>Here are some things that we sell:</h2>
         <ul>
             <% for(let i = 0; i < productCategories.length; i++) { %>
                 <li><%= productCategories[i] %></li>
             <% } %>
         </ul>
+        <a href="/register">Register Here</a><br>
+        <a href="/search">Search Products</a><br>
+        <a href="/about">About Us</a>
     </body>
 </html>
