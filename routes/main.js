@@ -14,6 +14,13 @@ var shopData = {shopName: "Drinks4Students",
                     {name: "Monster", category: "Energy Drinks", price: 2.60},
                     {name: "Coffee", category: "Hot Drinks", price: 1.80},
                     {name: "Tea", category: "Hot Drinks", price: 1.50}
+                ],
+                shops: [
+                    {manager: "Alice Smith", location: "London"},
+                    {manager: "Bob Johnson", location: "Manchester"},
+                    {manager: "Charlie Brown", location: "Birmingham"},
+                    {manager: "Diana Prince", location: "Leeds"},
+                    {manager: "Ethan Hunt", location: "Glasgow"}
                 ]
 };
 

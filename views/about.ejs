@@ -20,7 +20,18 @@
                 <a href="/register" class="btn">Register</a>
             </div>
         </nav>
-        <h1>About <a href="/"><%=shopName%></a> Shop</h1>
-        <p>We sell all sorts of drinks</p>
+        <h1>About <a href="/"><%=shopName%></a> Stores</h1>
+        <div class="stores-container">
+            <div class="list">
+                <ul>
+                    <% for (let i=0; i < shops.length; i++) { %>
+                        <li>
+                            <p>Location: <%= shops[i].location%><br>
+                            Manager: <%= shops[i].manager%></p>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

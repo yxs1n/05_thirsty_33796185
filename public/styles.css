@@ -89,6 +89,26 @@ a {
 
 /* Styling for about page */
 
+.stores-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 20px;
+    border-radius: 20px;
+    
+}
+
+.stores-container ul {
+    padding: 10px 100px;
+    text-align: left;
+    list-style-type: none;
+    font-size: 20px;
+    background-color: rgb(200, 183, 183);
+    border-radius: 20px;
+    color: black;
+}
+
 /* Styling for register page */
 
 .register-container {
