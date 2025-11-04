@@ -15,3 +15,66 @@ a {
     color: #fc0050;
     text-decoration: none;
 }
+
+/* Styling for navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    color: #fc0050;
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-left a {
+    color: #fc0050;
+    background-color: #343434;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: color 0.5s, background-color 0.5s ease;
+}
+
+.nav-left a:hover {
+    background-color: #fc0050;
+    color: #1f1f1f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-right .btn {
+    background-color: #343434;
+    color: #fc0050;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar #selected {
+    background-color: #fc0050;
+    color: #1f1f1f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Styling for about page */
+
+/* Styling for register page */
+
+/* Styling for search page */

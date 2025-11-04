@@ -5,15 +5,29 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <h1>Welcome to <a href="/"><%=shopName%></a> Shop</h1>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="/" id="selected">Home</a>
+                <a href="/search">Search</a>
+                <a href="/about">About</a>
+            </div>
+
+            <div class="nav-center">
+                <span><%=shopName%></span>
+            </div>
+
+            <div class="nav-right">
+                <a href="/register" class="btn">Register</a>
+            </div>
+        </nav>
         <h2>Here are some things that we sell:</h2>
-        <ul>
-            <% for(let i = 0; i < productCategories.length; i++) { %>
-                <li><%= productCategories[i] %></li>
-            <% } %>
-        </ul>
-        <a href="/register">Register Here</a><br>
-        <a href="/search">Search Products</a><br>
-        <a href="/about">About Us</a>
+        <div class="list">
+            <ul>
+                <% for(let i = 0; i < productCategories.length; i++) { %>
+                    <li><%= productCategories[i] %></li>
+                <% } %>
+            </ul>
+        </div>
+        
     </body>
 </html>
