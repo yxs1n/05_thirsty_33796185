@@ -3,6 +3,18 @@ const router = express.Router();
 
 var shopData = {shopName: "Drinks4Students",
                 productCategories: ["Soft Drinks", "Juices", "Water", "Energy Drinks", "Hot Drinks"],
+                products: [
+                    {name: "Coca Cola", category: "Soft Drinks", price: 1.50},
+                    {name: "Pepsi", category: "Soft Drinks", price: 1.40},
+                    {name: "Orange Juice", category: "Juices", price: 2.00},
+                    {name: "Apple Juice", category: "Juices", price: 2.10},
+                    {name: "Mineral Water", category: "Water", price: 1.00},
+                    {name: "Sparkling Water", category: "Water", price: 1.20},
+                    {name: "Red Bull", category: "Energy Drinks", price: 2.50},
+                    {name: "Monster", category: "Energy Drinks", price: 2.60},
+                    {name: "Coffee", category: "Hot Drinks", price: 1.80},
+                    {name: "Tea", category: "Hot Drinks", price: 1.50}
+                ]
 };
 
 router.get('/', (req, res) => {
