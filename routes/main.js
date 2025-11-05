@@ -49,5 +49,23 @@ router.post('/registered', (req, res) => {
     res.send('Hello ' + req.body.first + ' ' + req.body.last + ', you are now registered! We will send a confirmation email to ' + req.body.email);
 });
 
+router.get('/survey_access', (req, res) => {
+    res.render('survey_access.ejs', shopData);
+});
+
+router.post('/survey', (req, res) => {
+    res.render('survey.ejs', shopData);
+});
+
+router.post('/survey_results', (req, res) => {
+    const userResponses = {
+        q1: req.body.age,
+        q2: req.body.drink_type,
+        q3: req.body.is_student
+    };
+    console.log(userResponses);
+    res.render('survey_results.ejs', {shopData, userResponses});
+});
+
 
 module.exports = router;

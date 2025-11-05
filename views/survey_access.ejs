@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title><%=shopName%></title>
+        <meta charset="utf-8">
+        <title><%= shopName %></title>
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
@@ -10,7 +11,7 @@
                 <a href="/">Home</a>
                 <a href="/search">Search</a>
                 <a href="/about">About</a>
-                <a href="/survey_access">Survey</a>
+                <a href="/survey_access" id="selected">Survey</a>
             </div>
 
             <div class="nav-center">
@@ -21,14 +22,15 @@
                 <a href="/register" class="btn">Register</a>
             </div>
         </nav>
+
         <div class="register-container">
             <div class="register-form">
-                <h1>REGISTER</h1>
-                <form method="post" action="/registered">
+                <h1>Enter Details to Continue</h1>
+                <form method="post" action="/survey">
                     First Name: <input id="first" type="text" name="first"/>
                     Last Name: <input id="last"  type="text" name="last"/>
                     Email: <input id="email" type="email" name="email"/>
-                    <input type="submit" value="Register"/>
+                    <input type="submit" value="Continue"/>
                 </form>
             </div>
         </div>

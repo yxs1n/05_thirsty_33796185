@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><%= shopName %></title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="/">Home</a>
+                <a href="/search">Search</a>
+                <a href="/about">About</a>
+                <a href="/survey_access" id="selected">Survey</a>
+            </div>
+
+            <div class="nav-center">
+                <span><%=shopName%></span>
+            </div>
+
+            <div class="nav-right">
+                <a href="/register" class="btn">Register</a>
+            </div>
+        </nav>
+        <div class="survey-container">
+            <div class="survey-form">
+                <h1>Survey</h1>
+                <form method="post" action="/survey_results">
+                    How old are you?<br><br>
+                    <input id="age" type="number" name="age"/><br><br><br>
+                    Which of the following type of drinks do you consume?<br><br>
+                    <% for (let i=0; i < productCategories.length; i++) { %>
+                        <input type="radio" name="drink_type" value="<%= productCategories[i] %>"/>
+                        <label for="<%= productCategories[i] %>"><%= productCategories[i] %></label><br>
+                    <% } %>
+                    <br><br><br>
+                    Are you a student?<br><br>
+                    <input type="checkbox" name="is_student" value="yes"/> Yes <br>
+                    <input type="checkbox" name="is_student" value="no"/> No <br><br><br>
+                    <input type="submit" value="Submit Survey"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
